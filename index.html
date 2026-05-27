@@ -194,6 +194,26 @@
       font-weight: 400;
     }
 
+    .app-icon-avrana {
+      background: #0F1A2E;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-icon-avrana::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 60% 40%, rgba(100,160,220,0.35) 0%, transparent 60%),
+        radial-gradient(circle at 30% 70%, rgba(60,100,180,0.2) 0%, transparent 50%);
+    }
+
+    .avrana-icon-svg {
+      width: 30px; height: 30px;
+      position: relative; z-index: 1;
+    }
+
     .app-card-name {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.35rem;
@@ -604,7 +624,7 @@
     <section class="hero">
       <p class="hero-eyebrow">Independent app studio</p>
       <h1>Small Hours<br>Studio</h1>
-      <p>A one-person studio making considered apps for Android, iPhone, and Steam. Built in the small hours, with intention.</p>
+      <p class="hero-tagline">A one-person studio making considered apps for Android, iPhone, and Steam. Built in the small hours, with intention.</p>
     </section>
 
     <hr class="divider" />
@@ -640,6 +660,36 @@
               Play Store
             </a>
           </div>
+        </div>
+
+        <!-- Project Avrana -->
+        <div class="app-card coming-soon-card" style="--card-tint: rgba(100,160,220,0.04);">
+          <div class="app-card-top">
+            <div class="app-icon app-icon-avrana">
+              <svg class="avrana-icon-svg" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Planet -->
+                <circle cx="15" cy="15" r="8" fill="#1A3A5C" stroke="#4A90C4" stroke-width="0.75"/>
+                <!-- Atmosphere glow -->
+                <circle cx="15" cy="15" r="8" fill="none" stroke="#7AB8E8" stroke-width="1.5" opacity="0.3"/>
+                <!-- Continent suggestion -->
+                <path d="M11 12 Q13 10 15 12 Q17 13 16 15 Q14 17 12 16 Q10 14 11 12Z" fill="#2D6B3A" opacity="0.8"/>
+                <!-- Small star -->
+                <circle cx="24" cy="7" r="0.8" fill="#E8D5A0"/>
+                <circle cx="6" cy="22" r="0.5" fill="#C4D8F0" opacity="0.7"/>
+                <circle cx="22" cy="23" r="0.4" fill="#C4D8F0" opacity="0.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="app-card-name">Project Avrana</div>
+              <div class="app-card-one-line">A sci-fi incremental game</div>
+            </div>
+          </div>
+          <div class="app-card-tags">
+            <span class="tag">Game</span>
+            <span class="tag">iOS, Android &amp; Steam</span>
+            <span class="tag tag-soon">Coming soon</span>
+          </div>
+          <div class="app-card-flavour">Terraform a world. Uplift a species. Watch what they become.</div>
         </div>
 
         <!-- Placeholder: Phonics app -->
