@@ -491,6 +491,26 @@
 
     .about-page a:hover { border-color: var(--accent); }
 
+    /* ── FEATURE GRAPHIC ── */
+    .feature-graphic {
+      width: 100%;
+      max-width: 820px;
+      margin: 0 auto 3rem;
+      padding: 0 2.5rem;
+    }
+
+    .feature-graphic img {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 600px) {
+      .feature-graphic { padding: 0 1.25rem; }
+      .feature-graphic img { border-radius: 10px; }
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--ink);
@@ -636,6 +656,35 @@
           </div>
         </div>
 
+        <!-- Prayerful -->
+        <div class="app-card" style="--card-tint: rgba(107,140,110,0.05);" onclick="showPage('prayerful')">
+          <div class="app-card-top">
+            <div class="app-icon app-icon-surface">
+              <img src="prayerful_icon.png" alt="Prayerful" style="width:58px;height:58px;border-radius:13px;display:block;" />
+            </div>
+            <div>
+              <div class="app-card-name">Prayerful</div>
+              <div class="app-card-one-line">the door is always open</div>
+            </div>
+          </div>
+          <div class="app-card-tags">
+            <span class="tag">Spiritual</span>
+            <span class="tag">iOS &amp; Android</span>
+            <span class="tag tag-soon">Coming soon</span>
+          </div>
+          <div class="app-card-flavour">"One quiet moment. Every day. Selah."</div>
+          <div class="app-card-stores">
+            <a class="store-badge" href="#app-store-prayerful" onclick="event.stopPropagation()">
+              <svg viewBox="0 0 12 12"><path d="M6 0C2.69 0 0 2.69 0 6s2.69 6 6 6 6-2.69 6-6S9.31 0 6 0zm.75 9H5.25V5.25h1.5V9zm0-4.5H5.25v-1.5h1.5v1.5z"/></svg>
+              App Store
+            </a>
+            <a class="store-badge" href="#play-store-prayerful" onclick="event.stopPropagation()">
+              <svg viewBox="0 0 12 12"><path d="M1.5 0L9 6l-7.5 6V0zm0 1.73v8.54L7.88 6 1.5 1.73z"/></svg>
+              Play Store
+            </a>
+          </div>
+        </div>
+
         <!-- Project Avrana -->
         <div class="app-card coming-soon-card" style="--card-tint: rgba(100,160,220,0.04);">
           <div class="app-card-top">
@@ -704,6 +753,70 @@
   </div>
 
   <!-- ══════════════════════════════════════════
+       PRAYERFUL APP PAGE
+  ══════════════════════════════════════════ -->
+  <div id="page-prayerful" class="page">
+
+    <div style="max-width:820px; margin:0 auto; padding: 3rem 2.5rem 0;">
+      <a class="back-link" onclick="showPage('home')">← All apps</a>
+    </div>
+
+    <div class="app-page-hero">
+      <div class="app-page-icon" style="background:none;padding:0;">
+        <img src="prayerful_icon.png" alt="Prayerful" style="width:96px;height:96px;border-radius:22px;display:block;" />
+      </div>
+      <div>
+        <h1 class="app-page-title">Prayerful</h1>
+        <p class="app-page-sub">the door is always open — a quiet companion for daily prayer. One gentle prompt each day, a moment with God, and something to carry back into the world. <em>Selah.</em></p>
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+          <span class="tag">Spiritual</span>
+          <span class="tag">iOS &amp; Android</span>
+          <span class="tag tag-soon">Coming soon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-graphic">
+      <img src="prayerful_feature.png" alt="Prayerful — the door is always open" />
+    </div>
+
+    <div class="app-page-body"> It is not a Bible study tool or a content platform. It is a quiet companion — a single gentle prompt each day, space to pray without hurry, and a piece of scripture or reflection to ease you back into ordinary time.</p>
+      <p>The name comes from a posture, not a programme. The subtitle — <em>Selah</em> — is a Hebrew pause marker woven through the Psalms. A breath. A moment to stop and be present. That is all Prayerful asks of you.</p>
+
+      <h2>How it works</h2>
+      <p>Every session has three moments, each with its own shape:</p>
+      <ul>
+        <li><strong>Threshold</strong> — an invitation appears. You step in deliberately. The prompt fades in from a brief, quiet emptiness — the doorway.</li>
+        <li><strong>Presence</strong> — the prompt sits on a bare screen. No chrome, no timer. You pray for as long as you need. A small sage dot waits at the bottom, available whenever you are ready.</li>
+        <li><strong>Return</strong> — a piece of scripture, a quote, or an original line eases the transition back to your day. A closing word holds its own moment of space before the day resumes.</li>
+      </ul>
+
+      <h2>Design and tradition</h2>
+      <p>Prayerful draws on the same instincts as Surface — negative space, gentleness, absence of pressure or gamification. The design language is identical: warm near-white in light mode, deep candlelit brown in dark mode. Two apps that feel like the same quiet room.</p>
+      <p>The content draws from Catholic, Protestant, Anglican, Reformed, and contemplative voices — explicitly Christian, not bound to any single tradition. Content includes prompts in four translations (NIV, ESV, NRSV, KJV), scripture, quotes from theologians across the centuries, and original lines.</p>
+
+      <h2>What it doesn't do</h2>
+      <p>No streaks. No badges. No red days. No leaderboards. No pressure. The Practice screen is a dot grid — a quiet mirror of what you've done, not a dashboard of what you haven't. The app is designed so that after months of daily use, it still feels fresh and nourishing.</p>
+
+      <h2>Pricing</h2>
+      <p>Free, permanently. There is an optional in-app purchase to support the studio — framed as supporting the ministry of the app, not as a transaction.</p>
+
+      <p style="margin-top:2rem; font-size:0.82rem; color:var(--ink-muted);">
+        Privacy policy coming at launch.
+      </p>
+    </div>
+
+    <footer>
+      <span class="footer-logo">Small Hours Studio</span>
+      <ul class="footer-links">
+        <li><a href="#" onclick="showPage('privacy-surface'); return false;">Privacy — Surface</a></li>
+        <li><a href="mailto:hello@smallhours.studio">hello@smallhours.studio</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
        SURFACE APP PAGE
   ══════════════════════════════════════════ -->
   <div id="page-surface" class="page">
@@ -729,6 +842,10 @@
           <a class="store-badge-lg" href="#play-store-surface">Play Store</a>
         </div>
       </div>
+    </div>
+
+    <div class="feature-graphic">
+      <img src="surface_feature.png" alt="Surface — a daily tidying companion" />
     </div>
 
     <div class="app-page-body">
